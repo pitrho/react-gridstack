@@ -1,0 +1,6 @@
+node_modules
+
+# Distribution and deployment
+*.tgz
+lib
+dist

@@ -1,0 +1,26 @@
+{
+  "name": "react-gridstack",
+  "version": "0.1.0",
+  "description": "React wrapper for gridstack.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/pitrho/react-gridstack.git"
+  },
+  "keywords": [
+    "react",
+    "grid",
+    "gridstack",
+    "layout",
+    "jquery"
+  ],
+  "author": "Alejandro Mesa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/pitrho/react-gridstack/issues"
+  },
+  "homepage": "https://bitbucket.org/pitrho/react-gridstack#readme"
+}
