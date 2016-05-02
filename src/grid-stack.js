@@ -130,6 +130,12 @@ export default class GridStack extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    // If the list of widgets in props in empty, then simply clear the grid
+    if (this.props.children.length === 0) {
+      this.clear()
+      return
+    }
+
     const gridstack = $(this.refs.gridstack).data('gridstack')
 
     // Find any widgets we need to remove
