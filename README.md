@@ -58,4 +58,4 @@ See the license file.
 
 ## Contributors
 
-* [Alejadnro Mesa](https://github.com/alejom99)
+* [Alejandro Mesa](https://github.com/alejom99)

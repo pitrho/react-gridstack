@@ -1,5 +1,9 @@
 # Changes
 
+## v0.1.2
+* Updated documentation.
+* Updated package.json to point to github.com.
+
 ## v0.1.1 (2016-05-05)
 * Bug fix to clear the grid if the list of new children passed as props is
 empty.
