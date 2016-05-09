@@ -4,15 +4,16 @@ Wrapper library for [GridStack](http://troolee.github.io/gridstack.js/).
 
 ## Installing
 
-### Browser
-
-Copy the react-gridstack.min.js and react-gridstack.min.css files and include
-them in your html head. Note that this files include jQuery, jQuery-UI and
-lodash.
-
-### NPM
+### NPM (preferred)
 
     npm install react-gridstack
+
+### Browser
+
+To use this package in the browser, clone this repo and run `gulp build`. Then,
+copy the react-gridstack.min.js and react-gridstack.min.css files from the
+`dist` directory and include them in your html head. Note that this files
+include jQuery, jQuery-UI and lodash.
 
 ## Usage:
 ```js
