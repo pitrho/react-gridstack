@@ -110,6 +110,15 @@ export default class GridStack extends React.Component {
 
     const gridstack = $(this.refs.gridstack).gridstack(options).data('gridstack')
     $(this.refs.gridstack).on('resizestop', this.onResizeStop.bind(this))
+    $(this.refs.gridstack).on('resizestart', this.onResizeStart.bind(this))
+    $(this.refs.gridstack).on('removed', this.onRemoved.bind(this))
+    $(this.refs.gridstack).on('dragstop', this.onDragStop.bind(this))
+    $(this.refs.gridstack).on('dragstart', this.onDragStart.bind(this))
+    $(this.refs.gridstack).on('disable', this.onDisable.bind(this))
+    $(this.refs.gridstack).on('enable', this.onEnable.bind(this))
+    $(this.refs.gridstack).on('change', this.onChange.bind(this))
+    $(this.refs.gridstack).on('added', this.onAdded.bind(this))
+
 
     this.props.children.forEach(child => {
       gridstack.addWidget(
@@ -127,6 +136,18 @@ export default class GridStack extends React.Component {
       )
       ReactDOM.render(child, document.getElementById(child.props.id))
     })
+  }
+
+  componentWillUnmount(){
+    $(this.refs.gridstack).off('resizestop', this.onResizeStop.bind(this))
+    $(this.refs.gridstack).off('resizestart', this.onResizeStart.bind(this))
+    $(this.refs.gridstack).off('removed', this.onRemoved.bind(this))
+    $(this.refs.gridstack).off('dragstop', this.onDragStop.bind(this))
+    $(this.refs.gridstack).off('dragstart', this.onDragStart.bind(this))
+    $(this.refs.gridstack).off('disable', this.onDisable.bind(this))
+    $(this.refs.gridstack).off('enable', this.onEnable.bind(this))
+    $(this.refs.gridstack).off('change', this.onChange.bind(this))
+    $(this.refs.gridstack).off('added', this.onAdded.bind(this))
   }
 
   componentDidUpdate(prevProps, prevState) {
