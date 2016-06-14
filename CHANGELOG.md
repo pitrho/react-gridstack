@@ -1,5 +1,8 @@
 # Changes
 
+## v0.1.3
+* Connected missing events.
+
 ## v0.1.2
 * Updated documentation.
 * Updated package.json to point to github.com.
