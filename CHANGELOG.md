@@ -1,5 +1,9 @@
 # Changes
 
+## v0.1.4
+* Changed dependencies to support versions of react and react-dom and greater
+than 0.14.7 and 0.14.5 respectively. [PR #2](https://github.com/pitrho/react-gridstack/pull/2)
+
 ## v0.1.3
 * Connected missing events.
 
